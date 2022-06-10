@@ -26,6 +26,18 @@ Because the fumecube is made with a sheet metal shell, the ESP is designed on a 
 
 ![Assembled PCBs](docs/img/20220610-IMG_0135.jpg "Assembled PCBs")
 
+## Firmware
+
+The firmware is based on [ESPHome](https://esphome.io) 
+ESPHome projects are defined using a yaml config file. The ESPHome tool then pulls in source files to compile the firmware. You can install it and then compile the firmware with the following:
+
+```
+pip install esphome
+cd src
+esphome compile esp-fumecube.yaml
+esphome upload esp-fumecube.yaml --device /dev/ttyACM0
+```
+
 
 ## Licence
 
