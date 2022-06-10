@@ -1,0 +1,19 @@
+name: build-esphome-fw
+
+on:
+  push:
+
+
+jobs:
+  # Main build, creates firmware update image
+  build-esphome-fw:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: configure esphome
+      run: pip install esphome
+
+    - name: build
+      working-directory: ./src
+      run: esphomeesphome compile esp-fumecube.yaml
