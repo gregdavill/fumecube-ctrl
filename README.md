@@ -22,11 +22,9 @@ Having to dial the speed all the way done to turn the unit on/off is cumbersome.
 
 Because the fumecube is made with a sheet metal shell, the ESP is designed on a separate PCB and should be fitted outside the unit in a small 3d printed enclosure.
 
+## Assembled boards
 
-## Renders
-
-![alt-text](docs/img/esp-ctrl.png "ESP board")
-![alt-text](docs/img/fumecube-ctrl.png "Relay board")
+![Assembled PCBs](docs/img/20220610-IMG_0135.jpg "Assembled PCBs")
 
 
 ## Licence
