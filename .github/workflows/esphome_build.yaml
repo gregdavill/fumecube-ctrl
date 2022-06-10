@@ -16,4 +16,6 @@ jobs:
 
     - name: build
       working-directory: ./src
-      run: esphome compile esp-fumecube.yaml
+      run: |
+        cp secrets.yaml.example secrets.yaml
+        esphome compile esp-fumecube.yaml
